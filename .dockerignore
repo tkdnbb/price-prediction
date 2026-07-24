@@ -1,0 +1,9 @@
+.git
+.gitignore
+.venv
+.python-version
+__pycache__
+*.pyc
+*.pyo
+*.ipynb
+README.md
