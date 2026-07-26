@@ -24,6 +24,34 @@ Or with uvicorn directly:
 
 Interactive API docs available at `http://localhost:8000/docs`.
 
+# Docker
+
+Build the Docker image from the project root:
+
+```bash
+docker build -t price-prediction .
+```
+
+Check that the image exists:
+
+```bash
+docker images | grep price-prediction
+```
+
+Run the container and expose port 8000:
+
+```bash
+docker run -d -p 8000:8000 --name price-prediction-container price-prediction
+```
+
+Check the running container:
+
+```bash
+docker ps
+```
+
+Once the container is running, the API docs will be available at `http://localhost:8000/docs`.
+
 # APIs
 
 ## `POST /predict`
